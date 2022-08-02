@@ -1,0 +1,60 @@
+@import "../abstracts/breakpoints";
+
+#third_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+
+    @include md {
+        width: 70%;
+    }
+
+}
+
+.title_third_box {
+    font-size: 100%;
+    width: 50%;
+    text-align: center;
+    border-bottom: solid 2px #3A424E;
+    padding-bottom: 1%;
+    margin: auto;
+
+    @include md {
+        margin: 0px;
+        text-align: left;
+        font-size: 150%;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid_paras {
+    grid-column: 1/5;
+
+    @include md {
+        grid-column: 1/4;
+        margin-right: 6.25%;
+    }
+}
+
+article {
+    font-size: 15px;
+    line-height: 150%;
+    margin-top: 3%;
+
+    &:last-child {
+        margin-bottom: 3%;
+    }
+}
+
+#checkout {
+    align-self: center;
+    @include md{
+        align-self: flex-start;
+    }
+}

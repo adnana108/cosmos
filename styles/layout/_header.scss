@@ -1,0 +1,115 @@
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+header {
+    @include flexCenter(center);
+    background-color: $headFoot;
+    box-sizing: border-box;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    @include sm {
+        height: 60px;
+    }
+
+    @include md {
+        padding: 0%;
+    }
+}
+
+#nav_bar {
+    background-color: $headFoot;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include sm {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    @include md {
+        width: 70%;
+    }
+}
+
+.mobile_logo {
+    display: flex;
+    align-self: center;
+    padding-bottom: 4%;
+    font-size: 140%;
+    margin-top: 5%;
+
+    @include sm {
+        display: none;
+    }
+}
+
+
+#left_side_header {
+    @include flexCenter(space-between)
+}
+
+#right_side_header {
+    @include flexCenter(flex-end)
+}
+
+#basket {
+    align-self: flex-end;
+    padding: 1%;
+    box-sizing: border-box;
+
+    @include sm {
+        align-self: center;
+    }
+
+    @include md {
+        padding: 20%;
+
+        &:hover {
+            background-color: $grayHover;
+            box-sizing: border-box;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    }
+}
+
+.nav_elements {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    @include sm {
+        margin-right: 10%;
+    }
+
+    @include md {
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        &:hover:first-child {
+            text-decoration: none;
+        }
+    }
+}
+
+.big_logo {
+    display: none;
+
+    @include sm {
+        display: flex;
+        font-size: 200%;
+    }
+
+    @include md {
+        font-size: 220%;
+    }
+}
+
+.weight {
+    font-weight: $fontWeight;
+}

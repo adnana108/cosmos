@@ -1,0 +1,13 @@
+$headFoot: #141922;
+$borderColor: #181D26;
+$backgroundColor: #272B35;
+$grayHover:#2D333D;
+$buttonColor: #46C351;
+$buttonHover: #2a7931;
+
+@mixin flexCenter($justifyContent) {
+    display: flex;
+    justify-content: $justifyContent;
+}
+
+$fontWeight: 700;

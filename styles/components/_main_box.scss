@@ -1,0 +1,127 @@
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+
+.main_box {
+    display: none;
+    flex-direction: column;
+    border: solid 1px $borderColor;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+
+    @include md {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    img {
+        max-height: 100%;
+        width: 100%;
+
+        @include md {
+            width: 70%;
+        }
+    }
+
+    .relative {
+        display: none;
+
+        @include sm {
+            display: block;
+            position: absolute;
+            z-index: 3;
+            margin: 2% 1.5%;
+            line-height: 110%;
+        }
+    }
+}
+
+.active {
+    display: flex;
+    z-index: 10;
+}
+
+.text_block {
+    @include flexCenter(space-between);
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: $grayHover;
+}
+
+.details_box {
+    margin-bottom: 2%;
+
+    p {
+        width: 75%;
+        margin-top: 5%;
+    }
+
+    h3 {
+        font-size: 150%;
+
+        @include lg {
+            font-size: 200%;
+        }
+    }
+
+    span {
+        font-weight: $fontWeight;
+    }
+}
+
+.price_box {
+    @include flexCenter(space-between);
+    align-items: center;
+    width: 90%;
+    background-color: $backgroundColor;
+    border: solid 1px $borderColor;
+    border-radius: 10px;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 3%;
+
+    p:first-child {
+        font-weight: 700;
+        font-size: 100%;
+        width: 100%;
+
+        @include lg {
+            font-size: 200%;
+        }
+    }
+
+    p:last-child {
+        font-size: 14px;
+        margin-bottom: 5%;
+    }
+
+    @include sm {
+        width: 50%;
+    }
+
+    @include md {
+        width: 100%;
+    }
+
+}
+
+.button {
+    background-color: $buttonColor;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+    padding: 1% 2%;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $buttonHover;
+    }
+
+    @include md {
+        padding: 10px 15px;
+    }
+}

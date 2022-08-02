@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+@import "../components/arrows";
+@import "../components/main_box";
+@import "../components/second_box";
+@import "../components/third_box";
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(0);
+
+    >div:first-child {
+        @include flexCenter(center);
+        align-items: center;
+        margin-top: 5%;
+        width: 80%;
+        @include md{
+            width: 100%;
+        }
+    }
+}

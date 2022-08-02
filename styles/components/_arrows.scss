@@ -1,0 +1,48 @@
+.arrow_div {
+
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $grayHover;
+    }
+
+    &:first-child {
+        margin-right: 1%;
+    }
+
+    &:last-child {
+        margin-left: 1%;
+    }
+
+    .arrow {
+        box-sizing: border-box;
+        width: 20px;
+        display: inline-block;
+
+    }
+
+    #first_left_arrow,
+    #first_right_arrow {
+        background-color: $backgroundColor;
+
+        &:hover {
+            background-color: $grayHover;
+
+        }
+    }
+
+    @include md {
+        display: block;
+        box-sizing: border-box;
+        padding: 0.7% 1.2%;
+        background-color: $backgroundColor;
+        border-radius: 10px;
+        border: solid 1px $borderColor;
+    }
+}
+.right_arrow{
+    transform: rotate(90deg);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+}
