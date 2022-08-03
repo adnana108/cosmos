@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/breakpoints";
+@import "../common_utilities/variables";
+@import "../common_utilities/breakpoints";
 
 header {
     @include flexCenter(center);
@@ -15,63 +15,41 @@ header {
     @include md {
         padding: 0%;
     }
-}
 
-#nav_bar {
-    background-color: $headFoot;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    #nav_bar {
+        background-color: $headFoot;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
-    @include sm {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-    }
+        @include sm {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+        }
 
-    @include md {
-        width: 70%;
-    }
-}
+        @include md {
+            width: 70%;
+        }
 
-.mobile_logo {
-    display: flex;
-    align-self: center;
-    padding-bottom: 4%;
-    font-size: 140%;
-    margin-top: 5%;
+        .mobile_logo {
+            display: flex;
+            align-self: center;
+            padding-bottom: 4%;
+            font-size: 140%;
+            margin-top: 5%;
 
-    @include sm {
-        display: none;
-    }
-}
+            @include sm {
+                display: none;
+            }
+        }
 
+        #left_side_header {
+            @include flexCenter(space-between);
+        }
 
-#left_side_header {
-    @include flexCenter(space-between)
-}
-
-#right_side_header {
-    @include flexCenter(flex-end)
-}
-
-#basket {
-    align-self: flex-end;
-    padding: 1%;
-    box-sizing: border-box;
-
-    @include sm {
-        align-self: center;
-    }
-
-    @include md {
-        padding: 20%;
-
-        &:hover {
-            background-color: $grayHover;
-            box-sizing: border-box;
-            border-radius: 50%;
-            text-decoration: none;
+        #right_side_header {
+            @include flexCenter(flex-end)
         }
     }
 }
@@ -95,21 +73,42 @@ header {
             text-decoration: none;
         }
     }
+
+    .img-bar {
+        margin-right: 3%;
+    }
+
+    &.big_logo {
+        display: none;
+
+        @include sm {
+            display: flex;
+            font-size: 200%;
+        }
+
+        @include md {
+            font-size: 220%;
+        }
+    }
 }
 
-.big_logo {
-    display: none;
+#basket {
+    align-self: flex-end;
+    padding: 1%;
+    box-sizing: border-box;
 
     @include sm {
-        display: flex;
-        font-size: 200%;
+        align-self: center;
     }
 
     @include md {
-        font-size: 220%;
-    }
-}
+        padding: 20%;
 
-.weight {
-    font-weight: $fontWeight;
+        &:hover {
+            background-color: $mainGray;
+            box-sizing: border-box;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    }
 }

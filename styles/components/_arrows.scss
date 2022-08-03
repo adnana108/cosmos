@@ -1,10 +1,12 @@
+@import "../common_utilities/variables";
+
 .arrow_div {
 
     display: none;
 
     &:hover {
         cursor: pointer;
-        background-color: $grayHover;
+        background-color: $mainGray;
     }
 
     &:first-child {
@@ -15,34 +17,32 @@
         margin-left: 1%;
     }
 
-    .arrow {
-        box-sizing: border-box;
-        width: 20px;
-        display: inline-block;
-
-    }
-
-    #first_left_arrow,
-    #first_right_arrow {
-        background-color: $backgroundColor;
-
-        &:hover {
-            background-color: $grayHover;
-
-        }
-    }
-
     @include md {
         display: block;
         box-sizing: border-box;
         padding: 0.7% 1.2%;
-        background-color: $backgroundColor;
+        background-color: $darkGray;
         border-radius: 10px;
         border: solid 1px $borderColor;
     }
+
+    .arrow {
+        box-sizing: border-box;
+        width: 20px;
+        display: inline-block;
+    }
+
+    #first_left_arrow,
+    #first_right_arrow {
+        background-color: $darkGray;
+
+        &:hover {
+            background-color: $mainGray;
+
+        }
+    }
 }
-.right_arrow{
-    transform: rotate(90deg);
-    transform: rotateX(180deg);
+.right_arrow {
     transform: rotateY(180deg);
+    width: 20px;
 }

@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/breakpoints";
+@import "../common_utilities/variables";
+@import "../common_utilities/breakpoints";
 
 footer {
     background-color: $headFoot;
@@ -7,11 +7,11 @@ footer {
     justify-content: center;
 
     
-    div {
+    ul {
         padding-top: 3%;
         padding-bottom: 6%;
         width: 70%;
-        p{
+        li{
             &:first-child{
                 padding-bottom: 2.5%;
             }

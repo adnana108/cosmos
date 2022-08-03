@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+@import "../common_utilities/variables";
 @import "../components/arrows";
 @import "../components/main_box";
 @import "../components/second_box";
@@ -12,7 +12,7 @@
     width: 100%;
     transform: translateX(0);
 
-    >div:first-child {
+    #slider{
         @include flexCenter(center);
         align-items: center;
         margin-top: 5%;

@@ -1,13 +1,15 @@
 $headFoot: #141922;
+$darkGray: #272B35;
+$mainGray: #2D333D;
 $borderColor: #181D26;
-$backgroundColor: #272B35;
-$grayHover:#2D333D;
-$buttonColor: #46C351;
-$buttonHover: #2a7931;
+$green: #46C351;
+$darkGreen: #2a7931;
+$lightGray: #A9B5CC;
+$white: #FFFFFF;
+
+$fontWeight: 700;
 
 @mixin flexCenter($justifyContent) {
     display: flex;
     justify-content: $justifyContent;
 }
-
-$fontWeight: 700;

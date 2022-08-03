@@ -5,7 +5,7 @@
     <title>Cosmos</title>
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/compiles/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,52 +22,52 @@
                 <span>O</span>
                 <span class="weight">S</span>
             </div>
-            <div id="left_side_header">
-                <div class="nav_elements big_logo">
+            <ul id="left_side_header">
+                <li class="nav_elements big_logo">
                     <span class="weight">C</span>
                     <span>O</span>
                     <span class="weight">S</span>
                     <span class="weight">M</span>
                     <span>O</span>
                     <span class="weight">S</span>
-                </div>
-                <div class="nav_option nav_elements">
+                </li>
+                <li class="nav_elements">
                     <img class="img-bar" src="./pictures/Frame (1).png" />
-                    <p>Home</p>
-                </div>
-                <div class="nav_option nav_elements">
+                    <span>Home</span>
+                </li>
+                <li class="nav_elements">
                     <img class="img-bar" src="./pictures/Frame (3).png" />
-                    <p>Destinations</p>
-                </div>
-                <div class="nav_option nav_elements">
+                    <span>Destinations</span>
+                </li>
+                <li class="nav_elements">
                     <img class="img-bar" src="./pictures/Frame.png" />
-                    <p>Spaceships</p>
-                </div>
-            </div>
+                    <span>Spaceships</span>
+                </li>
+            </ul>
             <div id="right_side_header">
                 <div class="nav_elements" id="basket">
                     <img class="img-bar" src="./pictures/Frame (2).png" />
-                    <p id="itemsNum">0</p>
+                    <span id="itemsNum">0</span>
                 </div>
             </div>
         </nav>
     </header>
     <main id="hero">
-        <div>
+        <div id="slider">
             <div class="arrow_div">
                 <img class="arrow" id="first_left_arrow" src="./pictures/›.png" />
             </div>
-            <div class="main_box active">
+            <article class="main_box active">
                 <img src="./pictures/Layer 2.png" class="hero_img" />
                 <section class="relative">
-                    <span class="weight">ENCELADUS</span> <br />
+                    <div class="weight">ENCELADUS</div>
                     The Saturn System <br />
                     Distance: 9.5<br />
                     AUPopulation: 3920
                 </section>
                 <div class="text_block">
                     <section class="details_box">
-                        <h3><span class="weight">E</span>nceladus</h3>
+                        <h3 class="first_letter_weight">Enceladus</h3>
                         <p>is the sixth-largest moon of Saturn. It is about a tenth of Saturn's largest moon, Titan.</p>
                         <p>Explore this amazing cosmic marvel in a safe and fast trip with our aerospace company.</p>
                     </section>
@@ -79,18 +79,18 @@
                         <button class="button purchase">Purchase</button>
                     </div>
                 </div>
-            </div>
-            <div class="main_box">
+            </article>
+            <article class="main_box">
                 <img src="./pictures/moon.jpg" class="hero_img" />
                 <section class="relative">
-                    <span class="weight">ENCELADUS</span> <br />
+                    <div class="weight">ENCELADUS</div>
                     The Saturn System <br />
                     Distance: 9.5<br />
                     AUPopulation: 3920
                 </section>
                 <div class="text_block">
                     <section class="details_box">
-                        <h3><span class="weight">M</span>oon</h3>
+                        <h3 class="first_letter_weight">Moon</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum lorem ipsum</p>
                     </section>
@@ -102,18 +102,18 @@
                         <button class="button purchase">Purchase</button>
                     </div>
                 </div>
-            </div>
-            <div class="main_box">
+            </article>
+            <article class="main_box">
                 <img src="./pictures/pluto.jpeg" class="hero_img" />
                 <section class="relative">
-                    <span class="weight">ENCELADUS</span> <br />
+                    <div class="weight">ENCELADUS</div>
                     The Saturn System <br />
                     Distance: 9.5<br />
                     AUPopulation: 3920
                 </section>
                 <div class="text_block">
                     <section class="details_box">
-                        <h3><span class="weight">P</span>luto</h3>
+                        <h3 class="first_letter_weight">Pluto</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum lorem ipsum</p>
                     </section>
@@ -125,7 +125,7 @@
                         <button class="button purchase">Purchase</button>
                     </div>
                 </div>
-            </div>
+            </article>
             <div class="arrow_div">
                 <img class="arrow right_arrow" id="first_right_arrow" src="./pictures/›.png" />
             </div>
@@ -135,21 +135,21 @@
                 <div class="activities">
                     <div class="logo_text">
                         <img src="./pictures/Frame (4).png" class="img_activities" />
-                        <p><span class="weight">p</span>ack</p>
+                        <div class="first_letter_weight act_letter">pack</div>
                     </div>
                     <img src="./pictures/›.png" class="arrow right_arrow" />
                 </div>
                 <div class="activities">
                     <div class="logo_text">
                         <img src="./pictures/Frame (5).png" class="img_activities" />
-                        <p><span class="weight">f</span>ly</p>
+                        <div class="first_letter_weight act_letter">fly</div>
                     </div>
                     <img src="./pictures/›.png" class="arrow right_arrow" />
                 </div>
                 <div class="activities">
                     <div class="logo_text">
                         <img src="./pictures/Frame (6).png" class="img_activities" />
-                        <p><span class="weight">l</span>ive</p>
+                        <div class="first_letter_weight act_letter">live</div>
                     </div>
                     <img src="./pictures/›.png" class="arrow right_arrow" />
                 </div>
@@ -164,12 +164,12 @@
             </div>
         </div>
         <div id="third_box">
-            <p class="title_third_box">
-                <span class="weight">P</span>FL package
-            </p>
+            <div class="title_third_box first_letter_weight">
+                PFL package
+            </div>
             <div class="grid">
                 <div class="grid_paras">
-                    <article>
+                    <p class="paragraph_third_box">
                         Out pack fly live package includes lpsum dolor sit amet, consectetur adipiscing elit. Vivamus ex
                         ante, tristique sed elit id, scelerisque scelerisque risus. Nulla malesuada suscipit vehicula.
                         Vestibulum mauris purus, malesuada eget laoreet et, mattis eu purus. Sed arcu enim, rhoncus non
@@ -179,32 +179,31 @@
                         vel. Morbi luctus ligula erat, vitae pulvinar nunc pretium nec. Integer id facilisis nibh. In
                         porta at tellus eget consectetur. Vestibulum nisl nunc, euismod a aliquet sit amet, fermentum in
                         massa.
-
-                    </article>
-                    <article>
+                    </p>
+                    <p class="paragraph_third_box">
                         Nunc quis eros facilisis, sagittis ex vitae, mattis sapien. Duis feugiat dictum vehicula. Nullam
                         vestibulum tellus nisi, eu euismod velit finibus et. Aliquam id risus non sem pulvinar pulvinar
                         in quis tellus. Pellentesque eget ipsum dignissim, molestie est vitae, tincidunt elit.
                         Pellentesque suscipit, magna ac molestie luctus, magna massa placerat purus, in dictum urna dui
                         vel massa. Curabitur eget est felis. Morbi eleifend libero a turpis sollicitudin aliquet.
-                    </article>
-                    <article>
+                    </p>
+                    <p class="paragraph_third_box">
                         Aliquam id risus non sem pulvinar pulvinar in quis tellus. Pellentesque eget ipsum dignissim,
                         molestie est vitae, tincidunt elit. Pellentesque suscipit, magna ac molestie luctus, magna massa
                         placerat purus, in dictum urna dui vel massa. Curabitur eget est felis. Morbi eleifend libero a
                         turpis sollicitudin aliquet.
-                    </article>
+                    </p>
                 </div>
             </div>
             <button class="button" id="checkout">Checkout</button>
         </div>
     </main>
     <footer>
-        <div>
-            <p>Copyright COSMOS 2022. All rights reserved.</p>
-            <p>All data and company references are purely fictitious and shouldn’t be confused with real world entities
-                or names.</p>
-        </div>
+        <ul>
+            <li>Copyright COSMOS 2022. All rights reserved.</li>
+            <li>All data and company references are purely fictitious and shouldn’t be confused with real world entities
+                or names.</li>
+        </ul>
         <script src="design.js"></script>
     </footer>
 </body>

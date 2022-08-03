@@ -1,3 +1,4 @@
+// add to cart
 let itemsNum = document.getElementById('itemsNum');
 let valueOf = itemsNum.textContent;
 let parsed = parseInt(valueOf);
@@ -12,7 +13,7 @@ for (let i = 0; i < purButtons.length; i++) {
     purButtons[i].addEventListener("click", addToCard)
 };
 
-
+// slider
 let mainBox = $(".main_box")
 let index = 0;
 
@@ -54,7 +55,7 @@ $(document).ready(function () {
     $("#first_left_arrow").on("click", prev)
 })
 
-
+// slider for phone
 let image = $(".hero_img")
 function sliderForPhone(e) {
     let width = image.innerWidth()

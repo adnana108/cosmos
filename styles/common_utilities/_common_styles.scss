@@ -1,0 +1,27 @@
+@import "../common_utilities/variables";
+
+.button {
+    background-color: $green;
+    color: $white;
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+    padding: 1% 2%;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $darkGreen;
+    }
+
+    @include md {
+        padding: 10px 15px;
+    }
+}
+
+.weight {
+    font-weight: $fontWeight;
+}
+
+.first_letter_weight:first-letter{
+    font-weight: $fontWeight;
+}
